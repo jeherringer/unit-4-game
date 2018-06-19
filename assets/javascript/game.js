@@ -24,6 +24,8 @@ var fruitChoice4 = random();
 var totalScore = 0;
 var computerChoice = computerRandom ();
 
+var count=30;
+
 // random function will pick a random number for each fruit when clicked on
 function random() {
     return Math.floor(Math.random() * (12-1+1)) + 1;
@@ -69,6 +71,8 @@ function reset() {
     if (userWins >= 5) {
         count = 10;
     }
+    
+    
     timer();
     update();
 }
@@ -81,16 +85,21 @@ function update () {
     $("#countdown").text(count);
 }
 
-var count=30;
-
 var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 
 function timer() {
     count=count-1
-  if (count <= 0) {
-     clearInterval(counter);
-     return;
+
+    if (count == 0) {
+        alert("You ran out of time!");
+        userLosses++;
+        reset();
+    }
+    if (count <= 0) {
+        clearInterval(counter);
+        return;
   }
+  
 
     $("#countdown").text(count);
 }
