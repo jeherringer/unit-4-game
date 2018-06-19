@@ -1,0 +1,47 @@
+.jumbotron {
+    font-family: 'Arvo', serif;
+    height: 150px;
+    text-align: center;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPqah8t2bAHGy5NRSEV-SS2xkVlb4VKfIINvBdrveHPLMdkyQs");
+    color: white;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+#jumboText {
+    position: relative;
+    bottom: 40px;
+    font-size: 75px;
+    font-style: bold;
+}
+
+#directions {
+    padding-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px;
+    border-style: ridge;
+    border-color: red;
+    float: left;
+    margin-left: 15%;
+    border-radius: 25px 0px 0px 25px;
+}
+
+#scoreboard {
+    padding-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px;
+    border-style: ridge;
+    border-color: red;
+    float: right;
+    margin-right: 15%;
+    border-radius: 0px 25px 25px 0px;
+}
+
+#fruitImages {
+    margin: 10%;
+}
+
+
